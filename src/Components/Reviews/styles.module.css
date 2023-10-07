@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Instrument+Serif&family=Montserrat:wght@300&family=Turret+Road:wght@300&display=swap');
+
+.root {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.review:not(:last-child) {
+    margin-bottom: 10px;
+}

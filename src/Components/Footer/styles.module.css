@@ -1,0 +1,32 @@
+.root{
+display: block;
+margin: 1px;
+padding: 20px 50px;
+background-color: rgba(189, 184, 184, 0.212);
+}
+
+.info{
+display: flex; 
+justify-content: space-around;
+color: rgb(78, 78, 78);
+font-size: 13px;
+}
+
+.info1{
+max-width: 30%
+}
+
+.info2{
+max-width: 30%
+}
+
+.copyright{
+text-align: center;
+margin-top: 50px;
+}
+
+.copyrightText{
+font-size: 12px;
+color: rgba(56, 56, 56, 0.699);
+}
+

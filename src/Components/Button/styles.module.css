@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Instrument+Serif&family=Montserrat:wght@500&family=Turret+Road:wght@500&display=swap');
+
+.s{
+    width: 24px;
+    height: 24px;
+}
+
+.m{
+    width: 28px;
+    height: 28px;
+}
+
+.l{
+    width: 36px;
+    height: 36px;
+}
+
+.listButton{
+margin: 2px;
+line-height: 25px;
+font-family: 'Montserrat', sans-serif;
+background-color: transparent;
+cursor: pointer;
+border: none;
+color: rgb(56, 56, 56);
+letter-spacing: 2px;
+text-transform: uppercase;
+/* transition: all 0.3s ease-out 0s; */
+position: relative;
+padding: 4px 0;
+}
+
+/* .listButton:hover{
+background-color: rgb(185, 173, 173);
+} */
+
+.listButton::before{
+content: "";
+width: 100%;
+height: 1.5px;
+position: absolute;
+left: 0;
+bottom: 0;
+transition: 0.5s transform ease;
+transform: scale3d(0,1,1);
+transform-origin: 0 50%;
+}
+
+.listButton:hover::before{
+transform-origin: 0 50%;
+transform: scale3d(1,1,1);
+}
+
+.listButton::before{
+background: rgb(117, 117, 117);
+transform-origin: 100% 50%;
+}
+
+.orderButton{
+transition: all 0.2s ease-out 0s;
+margin: 30px 0;
+min-width: 200px;
+min-height: 50px;
+border-radius: 50px;
+font-family: 'Montserrat', sans-serif;
+border: none;
+cursor:pointer;
+letter-spacing: 2px;
+}
+
+.orderButton:hover{
+background-color: rgba(185, 173, 173, 0.5);
+color: rgb(56, 56, 56);
+}
+
+.countButton{
+margin: 0 5px;
+transition: all 0.2s ease-out 0s;
+border-bottom: lavender;
+font-family: 'Montserrat', sans-serif;
+cursor: pointer;
+}
+
+.countButton:hover:not(.disabled){
+background-color: rgba(185, 173, 173, 0.5);
+}
+
+.listButton.disabled::after {
+content: "";
+width: 100%;
+height: 1.5px;
+position: absolute;
+left: 0;
+bottom: 0;
+background:rgb(54, 54, 54); 
+transform-origin: 0 50%;
+transform: scaleX(1);
+}
+

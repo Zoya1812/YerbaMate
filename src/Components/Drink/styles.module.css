@@ -1,0 +1,22 @@
+.cartRoot{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: solid rgb(0, 0, 0) 1px;
+}
+
+.buttonPrice{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 50%;
+    margin: 0 10px;
+}
+
+.makeOrderButton{
+    max-width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
